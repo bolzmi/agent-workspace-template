@@ -1,0 +1,17 @@
+# Secrets / environment
+.env
+.env.*
+*.key
+*.pem
+secrets/
+credentials/
+
+# Local agent/runtime artifacts
+.local/
+.tmp/
+*.log
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/settings.json

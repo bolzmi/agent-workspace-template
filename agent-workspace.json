@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "project_name": "REPLACE_ME",
+  "canonical_agent_instructions": "AGENTS.md",
+  "startup_files": [
+    "AGENTS.md",
+    "STATE.md",
+    "TASKS.md",
+    "HANDOFF.md"
+  ],
+  "closeout_files": [
+    "STATE.md",
+    "TASKS.md",
+    "DECISIONS.md",
+    "HANDOFF.md",
+    "SESSION_LOG.md"
+  ],
+  "authoritative_task_system": "TASKS.md",
+  "secrets_policy": "never_commit_secrets"
+}
