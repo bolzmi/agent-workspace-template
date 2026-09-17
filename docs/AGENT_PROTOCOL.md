@@ -2,6 +2,17 @@
 
 This protocol is intentionally vendor-neutral.
 
+## 0. Synchronize when working from a local checkout
+
+Before relying on repository state, determine whether the local checkout is current with its configured remote when that capability is available.
+
+- Fetch/check remote state before substantial work.
+- Pull or otherwise synchronize before reading startup context if the remote is ahead and doing so will not overwrite uncommitted local work.
+- If local changes or divergence make synchronization unsafe, do not discard work automatically; identify the discrepancy and resolve it deliberately.
+- If remote synchronization cannot be checked, state that limitation and treat local state as potentially stale.
+
+This prevents a correct handoff on GitHub from being undermined by an outdated local clone.
+
 ## 1. Open
 
 Read, in order:
